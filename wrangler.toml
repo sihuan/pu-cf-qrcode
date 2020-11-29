@@ -1,0 +1,6 @@
+name = "pu"
+type = "webpack"
+account_id = "13404b9ffe59bca6ac8d761bac02f27f"
+workers_dev = true
+route = ""
+zone_id = "9b61e65c5f70222731a7a7937b393d55"
