@@ -12,7 +12,9 @@ export function renderHTML(codestr) {
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
       </head>
       <body>
-        <div id="qrcode" style="margin:40px;"></div>
+        <center>
+        <div id="qrcode" style="margin-top: 40px;"></div>
+        </center>
         <footer id="footer"><p>Powered by <a href="https://www.cloudflare.com/products/cloudflare-workers/">Cloudflare Workers</a>.</p></footer>
         <script type="text/javascript">
         new QRCode(document.getElementById("qrcode"), "${ codestr }"); 
