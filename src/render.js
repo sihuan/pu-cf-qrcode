@@ -3,11 +3,11 @@ import { renderHTML } from './render/htmlRender'
 
 export function codePage(uid) {
     const codestr = encrypt(makeLink(uid))
-    return renderHTML(codestr)
+    return renderHTML(codestr, uid)
 }
 
-function makeLink(uid){
+function makeLink(uid) {
     const dateTime = Date.now();
     const timestamp = Math.floor(dateTime / 1000);
-    return `xyhui://user/${ uid }/${ timestamp }`
+    return `xyhui://user/${uid}/${timestamp}`
 }
